@@ -154,7 +154,7 @@ body {
   font-size: 13px;
   color: #fff;
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -165,7 +165,7 @@ body {
 
 .main-button-gradient a:hover {
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
   opacity: 0.9;
 }
 
@@ -246,8 +246,9 @@ header
 --------------------------------------------- 
 */
 .background-header {
-  background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+  /* background: rgb(219,138,222) !important; */
+  border-radius:0!important;
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%) !important;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -257,12 +258,15 @@ header
 }
 
 .header-area {
-  background-image: url(../images/header-bg.png);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgb(159, 245, 246) 100%) !important;
+  /* border-radius: 50%; */
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  height: 110px;
+  height: 120px;
   top: 0;
   left: 0;
   right: 0;
@@ -891,7 +895,7 @@ section.our-courses ul.nacc li .left-image img {
 section.our-courses ul.nacc li .left-image .price h6 {
   position: absolute;
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
   color: #fff;
   top: 20px;
   left: 20px;
@@ -1133,7 +1137,7 @@ section.contact-us .contact-info .icon i {
   line-height: 50px;
   border-radius: 50%;
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
   color: #fff;
 }
 
@@ -1201,7 +1205,7 @@ section.contact-us #contact button {
   font-size: 13px;
   color: #fff;
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -1558,7 +1562,7 @@ section.our-office #video .thumb .play-button a {
   color: #fff;
   font-size: 22px;
   background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
 }
 
 section.our-office #video img {
@@ -1755,7 +1759,7 @@ body {
   } */
   .header-area {
     background: rgb(219,138,222) !important;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%) !important;
   }
   .services .owl-nav .owl-next{
     right: -70px;
@@ -1905,5 +1909,20 @@ body {
   }
   section.more-info .count-area-content .count-title {
     font-size: 22px;
+  }
+}
+/* forntimage */
+.right-image img {
+  animation: move-from-bottom 1.5s ease-in-out;
+}
+
+@keyframes move-from-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
