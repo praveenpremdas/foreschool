@@ -1393,6 +1393,7 @@ section.our-team .naccs .menu div {
 section.our-team .naccs .menu div img {
   border-radius: 50%;
   max-width: 120px;
+  height: 100px;
 }
 
 section.our-team .naccs .menu div h4 {
@@ -1452,6 +1453,8 @@ section.our-team ul.nacc li .right-image {
 section.our-team ul.nacc li .right-image img {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  width: 370px;
+  height: 342px;
 }
 
 section.our-team ul.nacc li .left-content {
