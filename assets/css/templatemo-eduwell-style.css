@@ -196,12 +196,12 @@ body {
 
 .white-button a {
   font-size: 13px;
-  color: #dc8cdb;
+  color: black;
   background-color: #fff;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   transition: all .3s;
 }
@@ -869,7 +869,7 @@ services
 .services .item h4 {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -947,21 +947,22 @@ section.our-courses .naccs .menu div {
   text-align: center;
   border-radius: 5px !important;
   margin-bottom: 40px;
-  font-size: 20px;
-  color: #111;
+  font-size: 15px;
+  color: #949494;
   background-color: #fff;
   cursor: pointer;
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(172,221,240,0.5);
 }
 
 
 section.our-courses .naccs .menu div.active {
-  color: #dc8cdb;
+  color: black;
   border: 3px solid rgba(219,138,222,1);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border: 3px solid rgba(88,159, 186,1);
+
 }
 
 
@@ -1092,7 +1093,7 @@ cta
 
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.png);
+  background-image: url("../images/bgcolor.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1122,7 +1123,7 @@ section.simple-cta h4 {
 
 
 section.simple-cta p {
-  color: #fff;
+  color: #4a4a4a;
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -1244,7 +1245,7 @@ contact us
 
 
 section.contact-us {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/bgcolor.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1279,29 +1280,30 @@ section.contact-us .contact-info {
 section.contact-us .contact-info .icon i {
   float: left;
   margin-right: 15px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   display: inline-block;
   text-align: center;
-  line-height: 50px;
+  line-height: 35px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgb(159, 245, 246) 100%);
-  color: #fff;
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgb(159, 245, 246) 100%);
+  /* color: #fff; */
 }
 
 
 section.contact-us .contact-info h4 {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
+  color:black;
 }
 
 
 section.contact-us .contact-info span {
   font-size: 15px;
-  color: #dc8cdb;
-  font-weight: 700;
+  color: #4a4a4a;
+  font-weight: 500;
 }
 
 
@@ -1398,21 +1400,21 @@ section.contact-us ul.social-icons li a {
   text-align: center;
   line-height: 44px;
   background-color: #fff;
-  color: #dc8cdb;
+  color: black;
   border-radius: 50%;
   transition: all .5s;
 }
 
 
 section.contact-us ul.social-icons li a:hover {
-  background-color: #dc8cdb;
+  background-color: #6c757d;
   color: #fff;
 }
 
 
 p.copyright {
   text-align: center;
-  color: #fff;
+  color: #4a4747;
   margin: 40px 0px;
 }
 
@@ -1576,8 +1578,9 @@ section.our-team .naccs .menu div {
 
 section.our-team .naccs .menu div img {
   border-radius: 50%;
-  max-width: 120px;
-  height: 100px;
+  width: 90px;
+  height: 99px;
+  margin-right: 25px;
 }
 
 
@@ -1586,6 +1589,7 @@ section.our-team .naccs .menu div h4 {
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 5px;
+  color: black;
 }
 
 
@@ -1599,7 +1603,7 @@ section.our-team .naccs .menu div span {
 
 
 section.our-team .naccs .menu div.active h4 {
-  color: #dc8cdb;
+  color: #787077;
 }
 
 
@@ -1672,6 +1676,10 @@ section.our-team ul.nacc li .left-content span a {
   color: #111;
   border-right: 2px solid #111;
   transition: all .3s;
+}
+
+section.our-team ul.nacc li .noborder span a {
+  border-right: 0px solid #111;
 }
 
 
@@ -1785,7 +1793,8 @@ section.our-office #video .thumb .play-button a {
 
 
 section.our-office #video img {
-  border-radius: 20px;
+  border-radius: 114px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 
@@ -2140,6 +2149,9 @@ body {
     width: 200px;
     height: 150px;
   }
+  section.our-team ul.nacc li .Helan img  {
+    width: 170px;
+  }
   section.our-courses ul.nacc li,
   section.our-team ul.nacc li {
     padding: 0px;
@@ -2160,7 +2172,10 @@ body {
     border: 3px solid #dc8cdb;
   }
   section.our-team .naccs .menu div img {
-    height: 36px;
+    /* height: 36px; */
+    width: 48px;
+    height: 60px;
+    /* margin-right: 30px; */
   }
   section.our-team .naccs .menu div h4,
   section.our-team .naccs .menu div span {
