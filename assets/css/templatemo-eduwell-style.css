@@ -226,8 +226,12 @@ body {
 }
 
 
-section {
-  margin-top: 140px;
+/* section {
+  margin-top: 50px;
+} */
+
+.page-heading-css, .page-heading-section, .our-team-section, .our-courses-section {
+  margin-top: 100px;
 }
 
 .meta-11 {
