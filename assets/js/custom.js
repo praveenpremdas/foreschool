@@ -215,7 +215,7 @@
 	        $('html, body').stop().animate({
 	            scrollTop: (target.offset().top) - 79
 	        }, 500, 'swing', function () {
-	            window.location.hash = target;
+	            window.location.hash = target.selector;
 	            $(document).on("scroll", onScroll);
 	        });
 	    });
@@ -332,5 +332,40 @@
         }
     })
 
+	$(document).ready(function () {
+        $('#contact').on('submit', function (event) {
+            event.preventDefault(); // Prevent actual form submission
+        })
+
+
+        $('.form-submit-contact').on('click', function (event) {
+            event.preventDefault(); // Prevent actual form submission
+
+
+            const clickedButtonName = $(this).attr('name');
+            const name = $('#contact-name').val();
+            const email = $('#contact-email').val();
+            const message = $('#contact-message').val();
+            let destination = ''
+
+
+            if (!email) {
+                return;
+            }
+   
+            // Create mailto link
+            if (clickedButtonName == "whatsapp") {
+                const phoneNumber = "9645382858"; // Replace with recipient's phone number
+                const text = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+                destination = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+            } else {
+                destination = `mailto:teamforeschool@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            }
+
+
+            // Redirect to the mail/whatsapp application
+            window.location.href = destination;
+        });
+    });
 
 })(window.jQuery);
