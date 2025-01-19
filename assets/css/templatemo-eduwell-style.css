@@ -48,7 +48,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-
+body{
+  scroll-behavior: smooth;
+}
 
 .clearfix:after {
   content: ".";
@@ -208,7 +210,9 @@ body {
 
 
 .white-button a:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
+  box-shadow: 0px 0px 140px 0px rgba(0, 0, 0, 0.6);
+
 }
 
 
@@ -1012,17 +1016,39 @@ section.our-courses ul.nacc li {
 }
 
 
-section.our-courses ul.nacc li .left-image {
+/* section.our-courses ul.nacc li .left-image {
   position: absolute;
   margin-right: 50px;
   top: 50%;
   transform: translateY(-50%);
+} */
+
+section.our-courses ul.nacc li .left-image {
+  position: absolute;
+  margin-right: 50px;
+  width: 310px;
+  height: 600px;
 }
 
+@media (max-width: 768px) {
+  section.our-courses ul.nacc li .left-image {
+    height: 150px;
+    width: 300%;
+  }
+
+} 
+
+/* section.our-courses ul.nacc li .left-image {
+  position: absolute;
+  margin-right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+} */
 
 section.our-courses ul.nacc li .left-image img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  
 }
 
 
@@ -1497,7 +1523,10 @@ section.get-info .left-image {
 section.get-info .section-heading {
   text-align: left;
 }
+section.get-info .info-item:hover{
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.36);
 
+}
 
 section.get-info .info-item {
   border-radius: 15px;
@@ -1512,7 +1541,7 @@ section.get-info .info-item .icon {
   position: absolute;
   left: 30px;
   top: -30px;
-  width: 80px;
+  width: 100px;
   height: 80px;
   display: inline-block;
   border-radius: 15px;
@@ -1524,7 +1553,8 @@ section.get-info .info-item .icon {
 
 
 section.get-info .info-item .icon img {
-  max-width: 60%;
+  max-width: 80%;
+  border-radius: 50px;
 }
 
 
@@ -2172,6 +2202,8 @@ body {
     border-radius: 15px;
     width: 210px;
     height: 170px;
+    margin-left: 32px;
+    margin-top: 10px;
   }
   section.our-team ul.nacc li .Helan img  {
     width: 170px;
@@ -2181,6 +2213,7 @@ body {
     padding: 0px;
   }
   section.our-courses ul.nacc li .right-content {
+    margin-top: 5%;
     margin-left: 0px;
     padding: 30px;
   }
