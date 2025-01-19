@@ -2197,13 +2197,17 @@ body {
     margin-left: 0px;
     transform: translateY(-0%);
   }
-  section.our-courses ul.nacc li .left-image img,
+  section.our-courses ul.nacc li .left-image img {
+    border-radius: 15px;
+    width: 210px;
+    height: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
   section.our-team ul.nacc li .right-image img {
     border-radius: 15px;
     width: 210px;
     height: 170px;
-    margin-left: 32px;
-    margin-top: 10px;
   }
   section.our-team ul.nacc li .Helan img  {
     width: 170px;
