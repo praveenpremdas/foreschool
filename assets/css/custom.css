@@ -197,11 +197,20 @@ ul {
 
 .contact-list li i {
   font-size: 1.5rem;
-  color: #4caf50;
+  color: black;
   margin-right: 1rem;
+  padding-left: 10px;
 }
 
 .contact-list li span {
-  font-size: 1rem;
-  color: #555;
+  font-size: 12px;
+  color: #635353;
+  font-style: normal;
 }
+.contact-list-header {
+    font-style: normal;
+}
+/* 
+@media only screen and (max-width: 768px) {
+
+} */
