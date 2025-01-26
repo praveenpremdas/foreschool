@@ -369,3 +369,23 @@
     });
 
 })(window.jQuery);
+
+
+window.onload = function() {
+    // Display the popup after the page loads
+    const popup = document.getElementById('overlay');
+    popup.style.display = 'flex';
+
+    // Close the popup when the close button is clicked
+    const closeButton = document.getElementById('close-popup');
+    closeButton.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    // Close the popup if the user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+}
