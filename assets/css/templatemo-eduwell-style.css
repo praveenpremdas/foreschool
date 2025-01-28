@@ -817,6 +817,16 @@ section.main-banner {
   z-index: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .main-banner .right-image::after {
+    background-image:none;
+  }
+  .main-banner .header-text::after {
+    background-image:none;
+  }
+}
+
+
 
 .main-banner .header-text h6 {
   position: relative;

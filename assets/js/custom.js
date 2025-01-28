@@ -464,17 +464,17 @@ window.onload = function () {
 
 
 
-const closeButton = document.getElementById('send-popup');
-closeButton.onclick = function () {
+const sendpopup = document.getElementById('send-popup');
+sendpopup.onclick = function () {
 	let name = document.getElementById('app-form-control-name').value;
 	let email = document.getElementById('app-form-control-email').value;
 	let contact = document.getElementById('app-form-control-contact').value;
 	let message = document.getElementById('app-form-control-message').value;
 
 
-	if (email) {
+	if (email || contact) {
 		const text = `Name: ${name}\nEmail: ${email}\n Phone: ${contact}\n\nMessage:\n${message}`;
-		destination = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+		destination = `https://wa.me/9645382858?text=${encodeURIComponent(text)}`;
 		window.location.href = destination;
 	}
 
