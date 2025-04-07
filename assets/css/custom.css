@@ -56,62 +56,26 @@ ul {
 
 
 .faq {
-  padding: 120px 0 90px;
+  padding: 30px 0 20px;
   background: #f7fbff;
   /* min-height: 100vh; */
 }
-
-
-
-
-
-
-
-
 .faq .section-title {
-  margin-bottom: 54px;
+  margin-bottom: 34px;
 }
-
-
-
-
-
-
-
 
 .faq .section-title h2 {
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
-
-
-
-
-
-
-
 
 .faq .accordion .card {
   border: none;
   margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
 .faq .accordion .card:not(:first-of-type) .card-header:first-child {
   border-radius: 10px;
 }
-
-
-
-
-
-
-
 
 .faq .accordion .card .card-header {
   border: none;
@@ -119,26 +83,13 @@ ul {
   padding: 0;
 }
 
-
-
-
-
-
-
-
 .faq .accordion .card .card-header h5 {
   padding: 0;
 }
 
-
-.faq .accordion .card .card-header h5 button:hover {
-  box-shadow: 0px -50px 140px 0px rgba(0, 0, 1, 0.10);
-
-
-
-
+.faq .accordion .card .card-header h5 button b:hover {
+  text-shadow: 0px 4px 15px rgba(69, 81, 100, 0.9);
 }
-
 
 
 
@@ -162,11 +113,6 @@ ul {
 
 
 
-
-
-
-
-
 .faq .accordion .card .card-header h5 button:after {
   position: absolute;
   left: 30px;
@@ -175,12 +121,12 @@ ul {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  color: #ff5f74;
+  color: #212020;
   text-align: center;
-  border: 1px solid #ff5f74;
+  border: 1px solid #232222;
   border-radius: 50%;
   line-height: 100%;
-  content: '\f067';
+  content: '+';
   font-size: 10px;
   line-height: 18px;
   font-family: "Font Awesome 5 Free";
@@ -210,9 +156,10 @@ ul {
 
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
-  content: '\f068';
+  content: '+';
   color: #fff;
-  background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #ff5f74 30%, #a85fff 100%);
+  /* background-image: -webkit-linear-gradient(-180deg, #b5b7bf 0%, #666262 30%, #cabcda 100%); */
+  background-color: #333;
 }
 
 
@@ -432,12 +379,15 @@ body {
 #whatWeOffer {
   font-family: Arial, sans-serif;
   padding-bottom: 4px;
+  background-color: aliceblue;
 }
+
 
 
 #whatWeOfferHome {
   font-family: Arial, sans-serif;
   padding-bottom: 8px;
+  
 }
 
 /* #whatWeOffer .feat {
@@ -452,7 +402,7 @@ body {
 
 #whatWeOffer .section-head h4 {
   position: relative;
-  color: #dc8cdb;
+  color: #c726c4;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
@@ -489,11 +439,11 @@ body {
 
 @media screen and (max-width: 1200px) {
   #whatWeOffer .item {
-    height: 370px;
+    height: 390px;
   }
 
   #whatWeOfferHome .item {
-    height: 390px;
+    height: 430px;
   }
 }
 
@@ -502,11 +452,11 @@ body {
 
 @media screen and (max-width: 650px) {
   #whatWeOffer .item {
-    height: 390px;
+    height: 360px;
   }
 
   #whatWeOfferHome .item {
-    height: 410px;
+    height: 390px;
   }
 }
 
@@ -514,7 +464,7 @@ body {
 
 
 #whatWeOffer .item:hover {
-  background: #dc8cdb;
+  background: #eed2ed;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -523,12 +473,19 @@ body {
   color: #000000;
   font-weight: 600;
   margin-bottom: 12px;
+  text-align:justify;
+
 }
 
 
 #whatWeOffer .item:hover h6,
 #whatWeOffer .item:hover p {
   color: #000000;
+  text-align:justify;
+}
+#whatWeOffer .item p {
+  color: #000000;
+  text-align:justify;
 }
 
 
@@ -1168,6 +1125,7 @@ background: #ea1d6f;
   font-size: 0.9rem;
   margin: 1rem 0;
   line-height: 1.5;
+  text-align:justify;
 }
 
 
@@ -1435,7 +1393,7 @@ background: #ea1d6f;
 
 #newsummarysection .slide .testimonial .author span {
   display: block;
-  color: var(--GrayishBlue);
+  color: #000;
   font-weight: 500;
 }
 
@@ -1762,6 +1720,7 @@ background: #ea1d6f;
   margin-bottom: 70px;
   text-transform: uppercase;
   z-index: 999;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -1983,6 +1942,8 @@ background: #ea1d6f;
   -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
   -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #ffffff;
+  padding: 2px;
 }
 
 #ourteamslide .testimonial4_slide p {
@@ -2047,3 +2008,60 @@ background: #ea1d6f;
 .testimonial-custom p {
   text-align: center;
 }
+
+/* ajeena */
+
+.fade-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  margin: 5%;
+  padding: 2%;
+}
+
+.fade-item.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .joinusnow {
+    word-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #freetrialpopptag {
+    word-spacing: 2px;
+  }
+
+  .section.simple-cta p {
+    word-spacing: 20px;
+
+  }
+
+  
+section {
+  padding: 60px;
+}
+
+}
+/* @media screen and (max-width: 400px) {
+  #courses .left-image {
+    left: -6%;
+  }
+
+  #courses .left-image img {
+    width: 100%;
+    height: 158px;
+  }
+}
+@media (min-width: 500px) and (max-width: 770px) {
+  #courses .left-image {
+    left: -6%;
+  }
+
+  #courses .left-image img {
+    width: 170%;
+    height: 158px;
+  }
+} */

@@ -425,7 +425,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #c726c4;
 }
 
 
@@ -1107,7 +1107,7 @@ section.main-banner {
 .main-banner .header-text h6 {
   position: relative;
   z-index: 2;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
   color: #777777;
@@ -1375,6 +1375,10 @@ section.our-courses ul.nacc li .left-image {
     /* width: 300%; */
   }
 
+  section.our-courses .section-heading p{
+    padding: 0;
+    text-align: justify;
+  }
 
 }
 
@@ -1549,6 +1553,9 @@ section.simple-cta p {
   color: #4a4a4a;
   margin-top: 30px;
   margin-bottom: 40px;
+  word-spacing: normal;
+  font-weight: 700;
+  text-align: justify;
 }
 
 
@@ -2915,6 +2922,7 @@ body {
   section.more-info .count-area-content .count-title {
     font-size: 18px;
   }
+
 }
 
 /* forntimage */
