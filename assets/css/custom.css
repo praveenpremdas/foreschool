@@ -15,10 +15,12 @@
 
 
 .whatsapp-button img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 
@@ -145,13 +147,13 @@ ul {
 .faq .accordion .card .card-header h5 button {
   color: #1e3056;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   padding: 0 30px 0 70px;
-  height: 80px;
+  height: 60px;
   display: block;
   width: 100%;
-  color: rgba(30, 48, 86, 0.8);
+  color: rgb(0 0 0 / 80%);
   text-align: left;
   background: #fff;
   -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
@@ -160,6 +162,9 @@ ul {
   position: relative;
 }
 
+.faq .accordion .card .card-header h5 button.collapsed:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
 
 
 
@@ -175,13 +180,13 @@ ul {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  color: #ff5f74;
+  color: rgb(219, 138, 222);
   text-align: center;
-  border: 1px solid #ff5f74;
+  border: 1px solid rgb(219, 138, 222);
   border-radius: 50%;
   line-height: 100%;
-  content: '\f067';
-  font-size: 10px;
+  content: '+';
+  font-size: 15px;
   line-height: 18px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -199,7 +204,7 @@ ul {
   border-radius: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid rgba(97, 125, 255, 0.2);
+  border: 1px solid rgb(1 1 1 / 41%);
 }
 
 
@@ -210,9 +215,9 @@ ul {
 
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
-  content: '\f068';
+  content: '+';
   color: #fff;
-  background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #ff5f74 30%, #a85fff 100%);
+  background-color: rgb(219, 138, 222);
 }
 
 
@@ -477,11 +482,12 @@ body {
   background: #fff;
   text-align: center;
   padding: 30px 25px;
-  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.30);
   border-radius: 20px;
   margin-bottom: 30px;
   transition: all 0.5s ease;
   height: 300px;
+  word-spacing: 1px;
 }
 
 
@@ -514,7 +520,7 @@ body {
 
 
 #whatWeOffer .item:hover {
-  background: #dc8cdb;
+  background: #e992e869;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -522,7 +528,8 @@ body {
 #whatWeOffer .item h6 {
   color: #000000;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 
@@ -1813,11 +1820,19 @@ background: #ea1d6f;
 #ourteamslide .testimonial {
   min-height: 375px;
   position: relative;
-  background: #aed9f066;
+  background: #17a7f463;
   padding-top: 50px;
   padding-bottom: 50px;
   background-position: center;
   background-size: cover;
+}
+
+#ourteamslide .testimonial .heading {
+  text-shadow: 5px 0px 6px rgba(0, 0, -1, .5);
+}
+
+#ourteamslide .testimonial4_slide img {
+  border: 3px solid white;
 }
 
 #ourteamslide #testimonial4 .carousel-inner:hover {
@@ -2008,6 +2023,12 @@ background: #ea1d6f;
   margin-top: 50px;
   color: #000;
   font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+#ourteamslide .testimonial4_slide h6 {
+  color: #120808;
 }
 
 /* ------testimonial close------- */
@@ -2047,3 +2068,76 @@ background: #ea1d6f;
 .testimonial-custom p {
   text-align: center;
 }
+
+.author span {
+  color: #000 !important;
+}
+
+#Our_Expertise {
+  font-size: 16px;
+}
+#personalisededucation {
+  font-size: 16px;
+}
+
+.Enroll-now-index {
+  font-weight: bold;
+}
+
+.footer {
+  margin-bottom: 15px
+}
+
+#whatWeOffer .item p {
+  color: #000000;
+  line-height: 19px;
+}
+
+/* custom media querry -- start */
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .main-button-gradient a {
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px 0px 4px rgba(0, 0, -1, .8);
+    word-spacing: .5px;
+  }
+
+  #index_popup {
+    word-spacing: 1px;
+  }
+  .Enroll-now-index {
+    word-spacing: 1px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  #Contact-us-index {
+    word-spacing: 1px;
+  }
+
+  /* .main-banner .header-text h2 {
+    font-size: 35px;
+    line-height: 42px;
+  } */
+}
+
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-button-gradient a {
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px 0px 4px rgba(0, 0, -1, .8);
+    word-spacing: .5px;
+  }
+
+  .Enroll-now-index {
+    word-spacing: 1px;
+  }
+}
+
+/* custom media querry -- end */

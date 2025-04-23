@@ -1066,7 +1066,7 @@ section.main-banner {
 
 .main-banner .right-image::after {
   position: absolute;
-  background-image: url(../images/banner-right-dec.png);
+  /* background-image: url(../images/banner-right-dec.png); */
   width: 378px;
   height: 378px;
   content: '';
@@ -1079,7 +1079,7 @@ section.main-banner {
 
 .main-banner .header-text::after {
   position: absolute;
-  background-image: url(../images/banner-left-dec.png);
+  /* background-image: url(../images/banner-left-dec.png); */
   width: 214px;
   height: 429px;
   content: '';
@@ -1123,7 +1123,7 @@ section.main-banner {
   margin-top: 20px;
   font-size: 50px;
   color: #111111;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 63px;
   margin-bottom: 40px;
 }
@@ -1263,7 +1263,7 @@ section.our-courses .section-heading p {
 section.our-courses:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
+  /* background-image: url(../images/our-courses-left-dec.png); */
   left: 45px;
   top: -140px;
   width: 291px;
@@ -1277,7 +1277,7 @@ section.our-courses:before {
 section.our-courses:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
+  /* background-image: url(../images/our-courses-right-dec.png); */
   right: 45px;
   top: -140px;
   width: 291px;
@@ -2058,7 +2058,7 @@ section.our-team .section-heading p {
 section.our-team:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
+  /* background-image: url(../images/our-courses-left-dec.png); */
   left: 45px;
   top: -140px;
   width: 291px;
@@ -2072,7 +2072,7 @@ section.our-team:before {
 section.our-team:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
+  /* background-image: url(../images/our-courses-right-dec.png); */
   right: 45px;
   top: -140px;
   width: 291px;

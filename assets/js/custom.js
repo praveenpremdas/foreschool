@@ -682,7 +682,20 @@ function prevSlide() {
 next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
 
+function updateSectionHeading() {
+	const whatParentsSaysDiv = document.querySelector('#newsummarysection .whatparentsays');
+	const heading = document.querySelector('#newsummarysection .section-heading h4');
 
+	if (heading) {
+		if (whatParentsSaysDiv && whatParentsSaysDiv.style.display === 'flex') {
+		heading.innerHTML = 'What parent<em>Says</em>';
+		} else {
+		heading.innerHTML = 'What Students <em>Say</em>';
+		}
+	}
+}
 
-
+document.getElementById('review-next-button')?.addEventListener('click', updateSectionHeading);
+document.getElementById('review-previous-button')?.addEventListener('click', updateSectionHeading);
+  
 
