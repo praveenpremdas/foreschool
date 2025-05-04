@@ -688,7 +688,7 @@ function updateSectionHeading() {
 
 	if (heading) {
 		if (whatParentsSaysDiv && whatParentsSaysDiv.style.display === 'flex') {
-		heading.innerHTML = 'What parent<em>Says</em>';
+		heading.innerHTML = 'What parent <em>Says</em>';
 		} else {
 		heading.innerHTML = 'What Students <em>Say</em>';
 		}
