@@ -347,7 +347,7 @@ body {
 .text-button a {
   font-size: 14px;
   font-weight: 500;
-  color: #dc8cdb;
+  color: #dd24da;
   text-decoration: underline !important;
   transition: all .3s;
 }
@@ -395,7 +395,7 @@ body {
   padding-top: 20px;
   margin-top: 0px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 
@@ -425,7 +425,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #dd24da;
 }
 
 
@@ -1141,7 +1141,7 @@ section.main-banner {
 
 .main-banner .header-text h2 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #dd24da
 }
 
 
@@ -1227,7 +1227,7 @@ services
 
 
 .services .owl-dots .active {
-  background-color: #dc8cdb;
+  background-color: #dd24da;
 }
 
 
@@ -1254,7 +1254,7 @@ section.our-courses {
 
 
 section.our-courses .section-heading p {
-  padding: 0px 60px;
+  padding: 0px 20px;
 }
 
 
@@ -1528,7 +1528,7 @@ section.simple-cta .left-image {
 
 section.simple-cta h6 {
   font-size: 17px;
-  color: #fff;
+  color: #4a4a4a;
 }
 
 
@@ -1536,8 +1536,8 @@ section.simple-cta h6 {
 
 section.simple-cta h4 {
   font-size: 62px;
-  font-weight: 900;
-  color: #fff;
+  font-weight: 600;
+  color: black;
   line-height: 74px;
   margin-top: 20px;
 }
@@ -1956,7 +1956,7 @@ section.page-heading .header-text h4 {
 
 section.page-heading .header-text h1 {
   font-size: 62px;
-  font-weight: 900;
+  font-weight: 600;
   color: #111;
   margin-top: 10px;
 }

@@ -628,7 +628,7 @@ if (sendpopup) {
 		let contact = document.getElementById('app-form-control-contact') ? document.getElementById('app-form-control-contact').value : '';
 		let message = document.getElementById('app-form-control-message') ? document.getElementById('app-form-control-message').value : '';
 
-		const text = `Name: ${name}\nEmail: ${email}\n Phone: ${contact}\n\nMessage:\n${message}`;
+		const text = `Name: ${name}\nMessage:${message}\n\n`;
 		destination = `https://wa.me/9645382858?text=${encodeURIComponent(text)}`;
 		window.location.href = destination;
 

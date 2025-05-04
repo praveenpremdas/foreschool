@@ -238,6 +238,8 @@ ul {
   padding-bottom: 23px;
   color: rgba(30, 48, 86, 0.8);
   line-height: 30px;
+  text-align: left;
+  word-spacing: 2px;
 }
 
 
@@ -457,7 +459,7 @@ body {
 
 #whatWeOffer .section-head h4 {
   position: relative;
-  color: #dc8cdb;
+  color: #dd24da;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
@@ -486,7 +488,7 @@ body {
   border-radius: 20px;
   margin-bottom: 30px;
   transition: all 0.5s ease;
-  height: 300px;
+  height: 335px;
   word-spacing: 1px;
 }
 
@@ -542,7 +544,7 @@ body {
 #whatWeOffer .item .icon {
   font-size: 40px;
   margin-bottom: 25px;
-  color: #dc8cdb;
+  color: #dd24da;
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -1347,6 +1349,7 @@ background: #ea1d6f;
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-bottom: 90px;
 }
 
 
@@ -1365,9 +1368,9 @@ background: #ea1d6f;
 #newsummarysection .buttons {
   z-index: 1;
   right: 50%;
-  top: 261px;
-  width: 80px;
-  height: 40px;
+  top: 176px;
+  width: 72px;
+  height: 31px;
   position: absolute;
   border-radius: 50px;
   transform: translateX(50%);
@@ -1419,7 +1422,7 @@ background: #ea1d6f;
 
 
 #newsummarysection .slide .testimonial {
-  padding: 32px 51px;
+  padding: 0px 51px;
   background-size: 60px;
   background-position: top;
   background-repeat: no-repeat;
@@ -1427,10 +1430,11 @@ background: #ea1d6f;
 
 
 #newsummarysection .slide .testimonial blockquote {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  margin-bottom: 13px;
+  margin-bottom: 33px;
+  word-spacing: 2px;
 }
 
 
@@ -1457,11 +1461,13 @@ background: #ea1d6f;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 20px;
 }
 
 
 #newsummarysection .slide .slider-img img {
-  width: 240px;
+  width: 160px;
+  height: 160px;
   display: block;
   border-radius: 10px;
   box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
@@ -2062,7 +2068,7 @@ background: #ea1d6f;
 }
 
 .testimonial-custom {
-  text-align: justify;
+  text-align: left;
 }
 
 .testimonial-custom p {
@@ -2093,6 +2099,17 @@ background: #ea1d6f;
   line-height: 19px;
 }
 
+section.our-courses ul.nacc li .right-content p {
+  text-align: left;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+#newsummarysection .slide .testimonial blockquote {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 /* custom media querry -- start */
 
 /* Mobile devices (portrait and landscape) */
@@ -2119,6 +2136,27 @@ background: #ea1d6f;
     word-spacing: 1px;
   }
 
+  #whatWeOfferHome .item {
+    height: 335px;
+  }
+
+  .services .item h4 {
+    word-spacing: 2px;
+  }
+
+  section.our-courses .section-heading p {
+    word-spacing: 2px;
+  }
+
+  #newsummarysection .slide .testimonial blockquote {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+
+  .Foreschool-is-unique {
+    word-spacing: 2px;
+  }
   /* .main-banner .header-text h2 {
     font-size: 35px;
     line-height: 42px;
@@ -2139,5 +2177,11 @@ background: #ea1d6f;
     word-spacing: 1px;
   }
 }
-
 /* custom media querry -- end */
+
+
+/* glocal font */
+*, *::before, *::after {
+  font-family: "Anek Malayalam", sans-serif !important;
+}
+/* glocal font end*/
