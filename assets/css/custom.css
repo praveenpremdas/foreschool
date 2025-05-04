@@ -2086,9 +2086,6 @@ background: #ea1d6f;
   font-size: 16px;
 }
 
-.Enroll-now-index {
-  font-weight: bold;
-}
 
 .footer {
   margin-bottom: 15px
@@ -2181,7 +2178,5 @@ section.our-courses ul.nacc li .right-content p {
 
 
 /* glocal font */
-*, *::before, *::after {
-  font-family: "Anek Malayalam", sans-serif !important;
-}
+
 /* glocal font end*/
